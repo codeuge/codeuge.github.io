@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="scripts/general.js"></script>
+		<link rel="shortcut icon" href="imgs/page-logo.svg" type="image/x-icon" />
+		<title>Test JS</title>
+	</head>
+	<body>
+
+		
+		<!-- Navbar -->
+		<div class="navbar" id="navbar">
+			<div class="show-menu">
+				<a class="icon-dropdown" href="#"><img src="imgs/html-icon.svg" alt="" /></a>
+				<img onclick="showMenu()" id="show-menu" src="imgs/menu-icon.svg" alt="" />
+			</div>
+			<div class="left" id="left">
+				<a href="#">Tracker</a>
+				<a href="#crosshairs">Crosshairs</a>
+				<a href="#cpt">Contacts</a>
+			</div>
+			<div class="right">
+				<a href="#"><img src="imgs/html-icon.svg" alt="" /></a>
+			</div>
+		</div>
+		<!-- Fine Navbar -->
+
+
+		<div class="wrapper">
+			<div class="container">
+				<div class="title-text" id="tracker-text">
+					Valorant Tracker
+				</div>
+				<div class="username">
+					<div class="username">Username</div>
+					<input type="text" id="username" name="username" />
+				</div>
+				<div class="tag">
+					<div class="tag">Tag</div>
+					<input type="text" id="tag" name="tag" />
+				</div>
+				<div class="get-rank-button">
+					<button id="get-rank" onclick="getRank()" tabindex="-1">
+						Get Rank
+					</button>
+				</div>
+				<div class="rank-username">
+					<p id="rank">-</p>
+					<p id="name">-</p>
+					<img id="rank-img" src="https://trackercdn.com/cdn/tracker.gg/valorant/icons/tiersv2/0.png"></img>
+				</div>
+
+				<div class="title-text" id="crosshairs">
+					Valorant Crosshairs
+				</div>
+				<div  class="crosshair-container">
+					<div class="crosshair-cell">
+						<img class="crosshair-img" src="imgs/crosshairs/tenz.png" alt="">
+						<button id="crosshair" class="crosshair-name" onclick="copyCode(event)">
+							<div id="text">Tenz</div>
+							<div id="crosshair-code" >0;s;1;P;c;5;h;0;m;1;0l;4;0o;2;0a;1;0f;0;1b;0;S;c;4;o;1</div>
+						</button>
+					</div>
+					<div class="crosshair-cell">
+						<img class="crosshair-img" src="imgs/crosshairs/reem.png" alt="">
+						<button id="crosshair" class="crosshair-name" onclick="copyCode(event)">
+							<div id="text">Reem</div>
+							<div id="crosshair-code">0;c;1;s;1;P;o;0.119;d;1;z;1;0t;1;0l;1;0v;1;0g;1;0o;0;0a;1;0e;0;1t;3;1l;0;1v;0;1g;1;1o;0;1a;0.386;1s;0;S;c;0;s;0.652;o;1</div>
+						</button>
+					</div><div class="crosshair-cell">
+						<img class="crosshair-img" src="imgs/crosshairs/geeza.png" alt="">
+						<button id="crosshair" class="crosshair-name" onclick="copyCode(event)">
+							<div id="text">geeza</div>
+							<div id="crosshair-code">0;P;h;0;f;0;0t;1;0l;4;0o;1;0a;1;0f;0;1t;3;1o;2;1a;1;1m;0;1f;0</div>
+						</button>
+					</div><div class="crosshair-cell">
+						<img class="crosshair-img" src="imgs/crosshairs/fishychair.png" alt="">
+						<button id="crosshair" class="crosshair-name" onclick="copyCode(event)">
+							<div id="text">Fishychair</div>
+							<div id="crosshair-code">0;P;c;4;h;0;d;1;f;0;0t;6;0l;1;0o;1;0a;1;0f;0;1b;0</div>
+						</button>
+					</div><div class="crosshair-cell">
+						<img class="crosshair-img" src="imgs/crosshairs/yay.png" alt="">
+						<button id="crosshair" class="crosshair-name" onclick="copyCode(event)">
+							<div id="text">Yay</div>
+							<div id="crosshair-code">0;P;h;0;f;0;0l;4;0o;0;0a;1;0f;0;1b;0</div>
+						</button>
+					</div><div class="crosshair-cell">
+						<img class="crosshair-img" src="imgs/crosshairs/dot_val.png" alt="">
+						<button id="crosshair" class="crosshair-name" onclick="copyCode(event)">
+							<div id="text">Dot</div>
+							<div id="crosshair-code">0;P;d;1;f;0;0t;4;0l;1;0o;0;0a;1;0f;0;1b;0</div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+
+	<!-- Footer  -->
+	<footer>
+		<div class="footer-wrapper">
+			<div class="copyright" id="cpt">
+			</div>
+			<div class="mail">
+				<a href="mailto:eugenio.pignatale@libero.it">eugenio.pignatale@libero.it</a>
+			</div>
+			<div class="contacts">
+				<a href="https://github.com/codeuge" target="_blank"><img src="imgs/contacts/github.svg" alt=""></a>
+				<a href="https://www.instagram.com/oh.eugenio" target="_blank"><img src="imgs/contacts/instagram.svg" alt=""></a>
+				<a href="https://twitter.com/basically_euge" target="_blank"><img src="imgs/contacts/twitter.svg" alt=""></a>
+			</div>
+		</div>
+		<script>
+			cpText()
+		</script>
+	</footer>
+	<!-- Fine Footer -->
+
+
+</html>
